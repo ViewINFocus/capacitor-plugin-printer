@@ -1,0 +1,87 @@
+{
+  "api": {
+    "name": "PrinterPlugin",
+    "slug": "printerplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "print",
+        "signature": "(printOptions: PrintOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "printOptions",
+            "docs": "",
+            "type": "PrintOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PrintOptions"
+        ],
+        "slug": "print"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "PrintOptions",
+      "slug": "printoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "content",
+          "tags": [
+            {
+              "text": "0.0.1",
+              "name": "since"
+            }
+          ],
+          "docs": "HTML content for print.",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "tags": [
+            {
+              "text": "iOS=YourAppName/Android=Document+CurrentTimestamp",
+              "name": "default"
+            },
+            {
+              "text": "0.0.1",
+              "name": "since"
+            }
+          ],
+          "docs": "Name of the print of the document.",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "orientation",
+          "tags": [
+            {
+              "text": "\"portrait\"",
+              "name": "default"
+            },
+            {
+              "text": "0.0.1",
+              "name": "since"
+            }
+          ],
+          "docs": "Orientation of the printing page. \"portrait\" or \"landscape\"",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
